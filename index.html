@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang = "en">
-   <head>
-     <!-- HOME PAGE -->
-     
+<html>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-     
-     <!-- Title that shows on the tab -->
-     <title>Lilah Denton</title>
-     
-     <!-- Meta tags for SEO and social sharing -->
+
+    <!-- Title that shows on the tab -->
+    <title>Lilah Denton</title>
+
+    <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
     <meta
       name="description"
@@ -29,117 +27,245 @@
       content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
     />
     <meta name="twitter:card" content="summary" />
-     
-     <!-- Import CSS stylesheet -->
-     <link rel="stylesheet" href="/style.css" />
-     
-     <!-- Import JS file -->
-     <script src="/script.js" defer></script>
-  
+
+    <!-- Import CSS stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import JS file -->
+    <script src="/script.js" defer></script>
   </head>
   <body>
-  
-    
-    <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-    <div class="content" role="main">
-    <!-- This is the start of content for our page -->
-    
-    <!--Navigation Bar-->
-      <!-- Figure out how to make nav bar scroll down to given header 
-        -->
-      <div id="navBar" class="sidenav">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#projects">Personal Projects</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
+    <!-- navigation bar -->
+    <div id="sidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Personal Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </div>
-    
-    <!-- Content -->
-    <h1 class="title">Lilah Denton</h1>
-      
-        
-    <h1 id="about">  </h1>
-      <strong>Student at Purdue Univeristy || Class of 2025</strong>
-      <p> <br>Hi there! My name is Lilah Denton and I am a first-year Computer Science student at Purdue Univeristy in West Lafayette, Indiana. 
-        I plan to focus on Programming Languages and Systems Programming in the near future.  
+
+    <div id="main">
+      <!-- website content -->
+      <button class="openbtn" onclick="openNav()">☰</button>
+
+      <h1 id="about">Lilah Denton</h1>
+      <strong>
+        Student at Purdue University || Class of 2025 ||
+        dentonlr@purdue.edu</strong
+      >
+      <p>
+        <br />Hi there! My name is Lilah Denton and I am a first-year Computer
+        Science student at Purdue University in West Lafayette, Indiana. I plan
+        to focus on Programming Languages and Systems Programming in the near
+        future.
       </p>
 
-      <h1 id="skills"><br>
-        Skills
-      </h1>
-      <p>
-        *insert programming languages here* 
-        <br>Java - HTML -  
-      </p>
-      
-    <h1 id="education"><br>Education </h1>
-      <p>
-        <h2>Purdue University </h2>
+      <h1 id="education"><br />Education</h1>
+      <p></p>
+      <h2>Purdue University</h2>
       West Lafayette, IN - Class of 2025
-      <br> Computer Science, Bachelor of Science
-      <br>GPA: n/a
-      
-      <h4><br>Relevant Courses</h4>
+      <br />
+      Computer Science, Bachelor of Science <br />GPA: 3.73
+
+      <h4><br />Relevant Courses</h4>
       <ul>
         <li>CS 18000 - Problem Solving and Object Oriented Programming</li>
-        <li>CS 19300 - Tools </li>
+        <li>CS 19300 - Tools</li>
       </ul>
-      <h4> Currently Taking </h4>
+      <h4>Currently Enrolled (Spring 2022)</h4>
       <ul>
-        <li>CS 18200 - Foundations of Computer Science </li>
-        <li> CS 24000 - Programming in C </li>
+        <li>CS 18200 - Foundations of Computer Science</li>
+        <li>CS 24000 - Programming in C</li>
       </ul>
-      </p>
-    
-    <h1 id="projects"><br>Personal Projects</h1>
-      *link Project 5* 
-      <br>*Nextech..?* 
-      
-      <h1 id="awards"><br> Achievments</h1>
+
+      <h4>
+        <br />
+        Clubs & Activities
+      </h4>
+      <ul>
+        <strong>Girls Who Code </strong
+        ><i>2021-current</i>
+        <li>
+          GWC is a nonprofit organization which aims to support and increase the
+          number of women in computer science by equipping young women with the
+          necessary computing skills to pursue 21st century opportunities. Our
+          first project was creating a personal website (you're looking at mine
+          right now!).
+        </li>
+      </ul>
+
+      <h1 id="skills"><br />Skills</h1>
       <p>
-        <h4> National Center for Women and Information Technology AiC </h4>
-          <li> Indiana Affiliate Winner 2021</li>
-          <li> Indiana Affiliate Honorable Mention 2020 </li>
-        <h4> <br>Nextech's Summer Coding Challenge 2020 </h4>
-        <li> Intermediate Division Winner</li>
-      
+        <img
+          id="java"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/java.png?v=1640801293177"
+        />
+        <img
+          id="javascript"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/javascript.png?v=1640801467523"
+        />
+        <img
+          id="html"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/95596_html_512x512.png?v=1640801453811"
+        />
+        <img
+          id="css"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/1915855.png?v=1640802032409"
+        />
       </p>
-      
-    <h1 id="resume"><br>Resume</h1>
-  *link reume here* 
-      
-      <h1 id="contact"><br>Contact Information </h1>
-    <p> 
-    <strong>EMAIL:</strong>
-    dentonlr@purdue.edu 
-     <br> lilahdenton14@gmail.com
-    <br> <strong>PHONE:</strong>
-    (317) 385-6225
-      <br> link GitHub, LinkedIN 
-      <br> add GItHub images etc
-  </p>
-        
-      
-      </div>
-  <footer>
-    <div class="links"></div>
+
+      <h1 id="projects"><br />Personal Projects</h1>
+      <p></p>
+
+      <h4>CS 18000 - Project 5: Learning Management Discussion Board</h4>
+      <ul id="projects">
+        <li>Java</li>
+        <li>Group Project</li>
+        <li>
+          Created a fully functional discussion board tool, similar to
+          Brightspace or Canvas.
+        </li>
+        <li>Check out our video demonstration here:</li>
+        <!--embedding a video, copy embed code directly from right-click on YouTube-->
+        <iframe
+          width="590"
+          height="295"
+          src="https://www.youtube.com/embed/0E0sOxN4wok"
+          title="YouTube video player"
+          frameborder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <br />
+
+        <li>
+          <p>
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/intellij-idea_logo_300x300.png?v=1640803660031"
+            />
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/java.png?v=1640801293177"
+            />
+          </p>
+        </li>
+        <li>December 2021</li>
+      </ul>
+
+      <h4><br />Nextech: Happy Hygiene</h4>
+      <ul id="projects">
+        <li>JavaScript, CSS, HTML</li>
+        <li>Individual Project</li>
+        <li>
+          Coded a mobile app through Code.org to motivate children to
+          participate in daily hygiene tasks. Coding Happy Hygiene earned me
+          first place in the intermediate division of Nextech's Summer 2020
+          Coding Challenge.
+        </li>
+        <iframe
+          width="590"
+          height="300"
+          src="https://www.youtube.com/embed/YbaDIwXppxI"
+          title="YouTube video player"
+          frameborder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <br />
+
+        <li>
+          <p>
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/Code.org-CTA.png?v=1640138797948"
+            />
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/95596_html_512x512.png?v=1640801453811"
+            />
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/javascript.png?v=1640801467523"
+            />
+            <img
+              id="ppicon"
+              src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/1915855.png?v=1640802032409"
+            />
+          </p>
+        </li>
+        <li>July 2020</li>
+      </ul>
+
+      <h1 id="awards">
+        <br />
+        Achievments
+      </h1>
+      <p></p>
+      <h4>National Center for Women and Information Technology AiC</h4>
+      <ul>
+        <li>Indiana Affiliate Winner 2021</li>
+        <li>Indiana Affiliate Honorable Mention 2020</li>
+      </ul>
+      <h4>
+        <br />
+        Nextech's Summer Coding Challenge 2020
+      </h4>
+      <ul>
+        <li>Intermediate Division Winner</li>
+      </ul>
+
+      <img
+        id="award-logo-ncwit"
+        src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/NCWITSquareLogo.png?v=1640139568352"
+      />
+
+      <img
+        id="award-logo-nextech"
+        src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/Screen%20Shot%202021-12-21%20at%2021.28.26.png?v=1640140143092"
+      />
+
+      <h1 id="resume"><br />Resume</h1>
+      <p>
         <a
-          class="btn--remix"
-          target="_top"
-          href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+          href="https://cdn.glitch.me/fd20f2e5-c213-4ba2-996e-2db7237fbf2d/RESUME%202021.pdf?v=1640978568312"
+          >Click to see my resume!</a
         >
-          <img
-            src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-            alt=""
-          />
-          Remix on Glitch
-        </a>
-    
+      </p>
+
+      <h1 id="contact"><br />Contact Information</h1>
+      <p>
+        <img
+          id="icon"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/email.png?v=1640103112136"
+          width="100"
+          height="100"
+        />
+        <strong>Email:</strong>
+        <a href="mailto:dentonlr@purdue.edu" subject="text"
+          >dentonlr@purdue.edu</a
+        >
+        <br />
+        <img
+          id="icon"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/github.png?v=1640102466033"
+          alt="github-icon"
+        />
+        <strong>GitHub: </strong>
+        <a href="https://github.com/lilahdenton">lilahdenton</a> <br /><img
+          id="icon"
+          src="https://cdn.glitch.me/c358adb3-241a-44a1-aebb-b145691855a5/linkedin.png?v=1640102464901"
+          alt="linked-icon"
+        />
+        <strong>LinkedIn: </strong>
+        <a href="https://www.linkedin.com/in/lilah-denton-699648220"
+          >Lilah Denton</a
+        >
+      </p>
+
+      <footer><br /><br />Last Update: January 2022</footer>
     </div>
-    </footer>
   </body>
-  
 </html>
