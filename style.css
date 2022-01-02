@@ -1,6 +1,5 @@
-
 :root {
-  --color-bg: #D0D0D0; /*Main Bkgnd: LT GREY*/
+  --color-bg: #F0F0F0; /*Main Bkgnd: LT GREY*/
   --color-text-main: #000000; /*Black*/
   --color-primary: #EF601E;
   --wrapper-height: 87vh;
@@ -10,217 +9,27 @@
   --font-family-header: "HK Grotesk";
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
+/* footer */
+footer {
+  text-align: center;
 }
 
 .divider {
   padding: 0 1rem;
 }
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
-}
-
-
-/*Side Navigation Bar*/
- .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #FB8500; /*ORANGE*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 80px from the top */
-  transition: 0; /* 0 second transition effect to slide in the sidenav */
- text-transform: uppercase; 
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #023047; /*DK BLUE TEXT*/
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-
-@media (min-width: 992px) {
-    #sideNav {
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        width: 17rem;
-        height: 100vh
-          
-    }
-
-    #sideNav .navbar-brand {
-        display: flex;
-        margin: auto auto 0;
-        padding: .5rem
-    }
-
-    #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: .5rem solid rgba(255, 255, 255, .2)
-    }
-
-    #sideNav .navbar-collapse {
-        display: flex;
-        align-items: flex-start;
-        flex-grow: 0;
-        width: 100%;
-        margin-bottom: auto
-    }
-
-    #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%
-    }
-
-    #sideNav .navbar-collapse .navbar-nav .nav-item {
-        display: block
-    }
-
-    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-        display: block
-    }
-}
-
-
-
-
-
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-  marigin-top: 5px; 
-  position: relative;
-  width: calc(100% - 190px);
-  float: right; 
-  margin-left:190px;
-}
 
 /* Reset */
-* {margin:0;box-sizing:border-box;}
-
-/* Full height */
-html,body,#page,#content {min-height:100%;height:100%;}
-
-/* Fixed-width left column */
-#navBar {
-  position:absolute;
-  top:0;
-  left:0;
-  width:16%;
-  padding:10px;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 /* Page structure */
 .wrapper {
   margin: 0px 20%;
   min-height: var(--wrapper-height);
   display: grid;
-  place-items: center;
+  place-items: left;
 }
 .content {
   display: flex;
@@ -230,65 +39,175 @@ html,body,#page,#content {min-height:100%;height:100%;}
   margin-left: -15px;
 }
 
-/* Lilah Denton TITLE */
-.title {
-  text-align: left; 
-  color: #023047; /*DK BLUE*/
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin-top: 40px;
-
+/* side nav bar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #70AE98; /*TEAL*/
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #D0D0D0;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #000000;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #70AE98;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #E6B655; /*YELLOW*/
 }
 
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
 }
 
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
-/* Headings */
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+/* TEXT HEADINGS */
 head {
-    background-color: #000000; 
-    color: #023047;
+  background-color: #000000;
+  color: #023047;
 }
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
 }
 ul {
-  background-color: #B0B0B0;
+  background-color: #D0D0D0;
   color: #000000;
+  list-style-type: square;
 }
 h1 {
-  color: #FB8500;
+  color: #70AE98;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+/*LILAH DENTON*/
+#about {
+  text-transform: uppercase;
+  text-align: left;
+  color: #000; /*DK BLUE*/
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin-top: 40px;
+}
+h2 {
+  color: #000;
+  font-size: 25px;
+}
+h4 {
+  font-size: 18px;
+}
+p {
+  font-size: 17px;
 }
 
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
+/*ICONS*/
+#java {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#javascript {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#css {
+  width: 83px;
+  height: 83px;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+#html {
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
+#ppicon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+#award-logo-ncwit {
+  display: inline-block;
+  position: wrap;
+  width: 170px;
+  height: 150px;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+#award-logo-nextech {
+  display: inline-block;
+  position: wrap;
+  width: 150px;
+  height: 150px;
+  margin-left: 4%;
+  margin-top: 3%;
+}
+#icon {
+  width: 50px;
+  height: 50px;
 }
