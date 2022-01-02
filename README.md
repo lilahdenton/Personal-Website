@@ -1,15 +1,15 @@
-# TODO:
- [ ] import fonts (make everything pretty!)
-<br> [ ] make the nav bar bring given header to the top/mid of the page 
-<br> [ ] add text to make this accurate 
-<br> [ ] add images 
-<br> [ ] check color scheme 
-<br> [ ] make nav bar centered?
-<br> [ ] make nav bar scroll with you 
+# Personal Website: Lilah Denton
 
-# Lilah Denton Personal Website Project 
 Author: Lilah Denton
-<br> Date: November 2021 - current 
+<br>Date: November 2021
+<br>Girls Who Code Project, Personal Project 
 
-## Description
-A personal website. My resume in website form. 
+## Project Description 
+This repository contains the code for my personal website. I started working on this in November 2021 and have been continuously making updates since. 
+
+## Files:
+← `index.html`: all html for my website, main layout 
+
+← `style.css`: css file, design based 
+
+← `script.js`: JavaScript, functionality 
