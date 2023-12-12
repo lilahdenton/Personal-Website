@@ -3,6 +3,10 @@ function openNav() {
   document.getElementById("sidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
+
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+
 function closeNav() {
   document.getElementById("sidenav").style.width = "0px";
   document.getElementById("main").style.marginLeft = "0px";
@@ -11,12 +15,11 @@ function closeNav() {
 //SKILLS
 
 //TODO: make buttons interactive
-document.getElementById("java").addEventListener("clicked", javaClicked);
+document.getElementById("java").addEventListener("mouseover", javaClicked);
 
 function javaClicked() {
-  console.log("JAVA-CLICKED");
+  console.log("JAVA");
+  
 }
 
-//ACHIEVMENTS
 
-//TODO: make these icons interactive 
