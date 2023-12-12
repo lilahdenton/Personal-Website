@@ -1,7 +1,7 @@
 :root {
-  --color-bg: #F0F0F0; /*Main Bkgnd: LT GREY*/
+  --color-bg: #f5f5f5; /*Main Bkgnd: LT GREY*/
   --color-text-main: #000000; /*Black*/
-  --color-primary: #EF601E;
+  --color-primary: #ef601e;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -11,8 +11,24 @@
 
 /* footer */
 footer {
-  text-align: center;
+      text-align: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+/* iframes border */
+iframe {
+      border: 2px solid #cccccc; /* Set the border style */
+      border-radius: 8px; /* Optional: Add rounded corners */
+      display: block; /* Make sure the iframe is a block element */
 }
+
+body {
+      border-right: 5vw solid #457778; /* Set the right border to 10% of the screen width */
+      margin: 0; /* Remove default margin to fully utilize the screen width */
+      box-sizing: border-box; 
+}
+
 
 .divider {
   padding: 0 1rem;
@@ -47,23 +63,26 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #70AE98; /*TEAL*/
+  background-color: #457778; /*#70ae98; /*TEAL*/
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+/*  transition: 0.5s;*/
+  padding-top: 15%;
   text-transform: uppercase;
+  overflow: auto;
 }
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #D0D0D0;
+  color: #d0d0d0;
   display: block;
-  transition: 0.3s;
+  align-items: center;
+  /*transition: 0.3s;*/
 }
 .sidebar a:hover {
   color: #000000;
 }
+
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -74,13 +93,13 @@ footer {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #70AE98;
+  background-color: #457778;
   color: white;
   padding: 10px 15px;
   border: none;
 }
 .openbtn:hover {
-  background-color: #E6B655; /*YELLOW*/
+  background-color: #e6b655; /*YELLOW*/
 }
 
 #main {
@@ -91,7 +110,7 @@ footer {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
-    padding-top: 15px;
+    padding-top: 15%;
   }
   .sidebar a {
     font-size: 18px;
@@ -128,12 +147,12 @@ body {
   background-color: var(--color-bg);
 }
 ul {
-  background-color: #D0D0D0;
+  background-color: #d0d0d0;
   color: #000000;
   list-style-type: square;
 }
 h1 {
-  color: #70AE98;
+  color: #457778;
   font-size: 35px;
   text-transform: uppercase;
 }
@@ -149,6 +168,12 @@ h1 {
   line-height: 105%;
   margin-top: 40px;
 }
+
+#email-link {
+  color: black;
+  text-decoration: none;
+}
+
 h2 {
   color: #000;
   font-size: 25px;
@@ -183,10 +208,16 @@ p {
   height: 100px;
   position: relative;
 }
+#c {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  left: 10px;
+}
 
 #ppicon {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   position: relative;
 }
 
@@ -208,6 +239,30 @@ p {
   margin-top: 3%;
 }
 #icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+/* Project buttons */
+
+
+.project-buttons {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #dddddd; /* Grey background color */
+  color: #000000; /* Black text color */
+  border: 2px solid #000000; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover styles */
+.project-buttons:hover {
+  background-color: #666666; /* Darker grey on hover */
+  color: #ffffff; /* White text on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow on hover */
 }
